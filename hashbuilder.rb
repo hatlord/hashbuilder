@@ -1,17 +1,12 @@
 #!/usr/bin/env ruby
-#hashbuilder
+#hashbuilder - https://github.com/hatlord/hashbuilder
+#Give me a plaintext value, and ill show you the hashes. You can also specify a salt!
+#Example - ./hashbuilder --string password --salt 1234
 
 require 'digest'
-require 'base64'
 require 'colorize'
 require 'text-table'
 require 'trollop'
-
-#take a string and output all the different hash types, then the base64 encoded versions.
-#Maybe allow a user to specify a salt?
-#read files of strings in or just single string?
-
-
 
 class Hashes
 
