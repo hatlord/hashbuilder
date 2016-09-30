@@ -4,7 +4,7 @@ Very simple tool which takes a plaintext input and a salt if you choose, and the
 By comparing the output of this tool to the hash, you should be able to solve it. 
 Currently supports MD5, SHA1 and various strengths of SHA2.
 
-Installation:
+Installation:  
 1)Git Clone  
 2)Bundle Install
 
