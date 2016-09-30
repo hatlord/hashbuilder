@@ -8,5 +8,5 @@ Installation:
 1)Git Clone  
 2)Bundle Install
 
-Usage:
+Usage:  
 ./hashbuilder --string password --salt 1234
