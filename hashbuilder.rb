@@ -67,6 +67,7 @@ class Hashes
         @sha1hashes << ["SHA1 Hex, append salt", Digest::SHA1.hexdigest(@@opts[:string] + @@opts[:salt])]
         @sha1hashes << ["SHA1 Base64, append salt", Digest::SHA1.base64digest(@@opts[:string] + @@opts[:salt])]
       end
+      @sha1hashes
   end
 
   def sha256
@@ -78,6 +79,7 @@ class Hashes
         @sha256hashes << ["SHA256 Hex, append salt", Digest::SHA256.hexdigest(@@opts[:string] + @@opts[:salt])]
         @sha256hashes << ["SHA256 Base64, append salt", Digest::SHA256.base64digest(@@opts[:string] + @@opts[:salt])]
       end
+      @sha256hashes
   end
 
   def sha384
@@ -89,6 +91,7 @@ class Hashes
         @sha384hashes << ["SHA384 Hex, append salt", Digest::SHA384.hexdigest(@@opts[:string] + @@opts[:salt])]
         @sha384hashes << ["SHA384 Base64, append salt", Digest::SHA384.base64digest(@@opts[:string] + @@opts[:salt])]
       end
+      @sha384hashes
   end
 
   def sha512
@@ -100,6 +103,7 @@ class Hashes
         @sha512hashes << ["SHA512 Hex, append salt", Digest::SHA512.hexdigest(@@opts[:string] + @@opts[:salt])]
         @sha512hashes << ["SHA512 Base64, append salt", Digest::SHA512.base64digest(@@opts[:string] + @@opts[:salt])]
       end
+      @sha512hashes
   end
 
 end
