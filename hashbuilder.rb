@@ -6,12 +6,13 @@
 require 'digest'
 require 'colorize'
 require 'text-table'
-require 'trollop'
+require 'optimist'
+require 'pp'
 
 class Hashes
 
   attr_reader :hashes, :string
-  
+
   def initialize
     @md5hashes    = []
     @sha1hashes   = []
@@ -21,7 +22,7 @@ class Hashes
   end
 
   def arguments
-    @@opts = Trollop::options do 
+    @@opts = Optimist::options do
       version "hashbuilder 0.1b"
 
       opt :string, "String to hash", :type => String
@@ -135,4 +136,3 @@ run.header
 
 printme = Printer.new(run)
 printme.printhash
-
